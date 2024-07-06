@@ -2,8 +2,8 @@ import logo from '../assets/Logo.svg';
 import { HiOutlineMenu } from "react-icons/hi";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { RiArrowDropDownLine } from "react-icons/ri";
 import { TbShoppingBag } from "react-icons/tb";
+import Search from './search';
 const Navbar = () =>{
     const [isOpen, setIsOpen] = useState(false);
 
@@ -11,10 +11,10 @@ const Navbar = () =>{
         setIsOpen(!isOpen);
     };
     return (
-        <div className="px-[54px] py-[42px] w-full font-pop">
+        <div className="px-[54px] py-[42px]  w-full font-pop">
             <div className='flex flex-row justify-between items-center'>
              <Link to='/' className= 'cursor-pointer'>
-                <img src={ logo } className='w-[25px] lg:w-[152px] lg:h-[52px]'/>
+                <img src={ logo } className='w-[25px] lg:w-[132px]'/>
              </Link>
 
              <button onClick={toggleMenu} className='block md:hidden z-30'><HiOutlineMenu className="h-[25px] w-[25px]"/></button>
@@ -35,6 +35,7 @@ const Navbar = () =>{
                 </div>
              </div>
 
+            <Search />
              
            </div>
         </div>
