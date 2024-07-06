@@ -20,7 +20,7 @@ const Navbar = () => {
         </Link>
 
         <div
-          className={`fixed top-0 right-0 h-full bg-[#e9e9e9] w-[75%] md:w-[50%] transform ${
+          className={`fixed top-0 right-0 h-full z-20 bg-[#e9e9e9] w-[75%] md:w-[50%] transform ${
             isOpen ? "-translate-x-0" : "translate-x-full"
           } transition-transform duration-500 ease-in-out overflow-hidden`}
         >
