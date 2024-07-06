@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 const Search = () => {
     return (  
         <div className="flex items-center justify-center">
-            <div className="flex flex-row items-center w-[550px] h-[42px] border border-[#2972FF] rounded-[12px]">
+            <div className="flex flex-row items-center w-[500px] h-[42px] border border-[#2972FF] rounded-[12px]">
                 <CiSearch className="flex-shrink-0 ml-[10px]"/>
                 <input 
                 type="text" 
