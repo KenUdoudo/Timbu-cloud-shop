@@ -11,7 +11,7 @@ const Navbar = () =>{
         setIsOpen(!isOpen);
     };
     return (
-        <div className="px-[54px] py-[42px]  w-full font-pop">
+        <div className="px-[40px] py-[20px]  w-full font-pop">
             <div className='flex flex-row justify-between items-center'>
              <Link to='/' className= 'cursor-pointer'>
                 <img src={ logo } className='w-[25px] lg:w-[132px]'/>
@@ -36,6 +36,12 @@ const Navbar = () =>{
              </div>
 
             <Search />
+
+            <div className='flex flex-row justify-between items-center gap-[45px]'>
+                <Link to="/products">Products</Link>
+                <Link to="/contactus">Contact Us</Link>
+                <Link to="/mycart" className='bg-[#2972FF] flex items-center text-white gap-[10px] py-[5px] px-[8px] rounded-[8px]'><TbShoppingBag/>My Cart</Link>
+            </div>
              
            </div>
         </div>
