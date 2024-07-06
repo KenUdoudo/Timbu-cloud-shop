@@ -1,1 +1,6 @@
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { IoMdHeart } from "react-icons/io";
+import { TbShoppingBag } from "react-icons/tb";
+
+© Copyright 2024, All Rights Reserved by Timbu Cloud Shop
