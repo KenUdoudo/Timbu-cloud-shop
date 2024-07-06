@@ -1,5 +1,5 @@
 import './App.css'
-
+import Footer from './components/footer';
 import Navbar from './components/navbar';
 import Products from './pages/products';
 import Contact from './pages/contactus';
@@ -21,6 +21,7 @@ function App() {
             <Route path='/checkout' element={<Checkout />} />
           </Routes>
         </div>
+        <Footer />
         
     </Router>
   )
