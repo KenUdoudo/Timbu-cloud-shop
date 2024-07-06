@@ -1,7 +1,9 @@
+import Sec1home from "./section1";
+
 const Home = () => {
     return (
-        <div>
-            
+        <div className="font-pop">
+            <Sec1home />
         </div>
     );
 }
