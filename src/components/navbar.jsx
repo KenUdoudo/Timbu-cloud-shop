@@ -1,5 +1,5 @@
 import logo from "../assets/Logo.svg";
-import { HiOutlineMenu } from "react-icons/hi";
+import { CgMenuLeft } from "react-icons/cg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { TbShoppingBag } from "react-icons/tb";
@@ -69,7 +69,7 @@ const Navbar = () => {
         </div>
 
         <button onClick={toggleMenu} className="block lg:hidden z-30">
-          <HiOutlineMenu className="h-[25px] w-[25px]" />
+          <CgMenuLeft className="h-[25px] w-[25px]" />
         </button>
       </div>
     </div>
