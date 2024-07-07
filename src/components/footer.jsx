@@ -7,7 +7,7 @@ import logo from "../assets/Logo.svg";
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <div className="mt-[30px]">
+        <div className="mt-[30px] font-pop">
             <div className="w-full py-[20px] px-[20px] md:px-[40px] bg-[#2972FF] flex flex-col gap-y-[10px] md:flex-row justify-between items-center">
                 <p className="text-white text-[17px]">Subscribe to our newsletter to get updates on our latest offers!</p>
                 <div className="flex flex-col md:flex-row justify-between items-center gap-y-[10px] gap-x-[20px] w-full md:w-auto">
