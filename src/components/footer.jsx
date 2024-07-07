@@ -68,6 +68,17 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
+            <div className="px-[20px] md:px-[40px] pt-[80px] pb-[20px]"><hr /></div>
+
+            <div className="px-[20px] md:px-[40px] flex flex-col md:flex-row justify-between gap-y-[10px]">
+                <div className="flex gap-[10px]">
+                    <p className="text-[13px] underline cursor-pointer">Terms and Conditions</p>
+                    <p className="text-[13px] underline cursor-pointer">Policy</p>
+                    <p className="text-[13px] underline cursor-pointer">Privacy</p>
+                    <p className="text-[13px] underline cursor-pointer">Order</p>
+                </div>
+                <p className="text-[13px] text-[#3E3E3E]">© Copyright 2024, All Rights Reserved by Timbu Cloud Shop</p>
+            </div>
             
         </div>
     );
