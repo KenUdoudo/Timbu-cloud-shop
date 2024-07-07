@@ -47,7 +47,7 @@ const Footer = () => {
                         <div>
                             <p className="text-[#3C4859] text-[13px]">Follow us on social media:</p>
                             <div className="flex flex-row justify-start">
-                                <div><FaTwitter /></div>
+                                <div className="bg-[#1e293b] w-[20px] h-[20px] flex justify-center items-center rounded-full"><FaTwitter className="text-white"/></div>
                                 <div><FaFacebookF /></div>
                                 <div><FaInstagram /></div>
                             </div>
