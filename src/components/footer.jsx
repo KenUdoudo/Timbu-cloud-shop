@@ -1,6 +1,10 @@
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import gp from '../assets/gp.png';
+import app from '../assets/app.png';
+import logo from "../assets/Logo.svg";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <div className="mt-[30px]">
@@ -12,8 +16,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="px-[20px] md:px-[40px] flex flex-col md:flex-row justify-between">
-                <div className="flex flex-col md:flex-row justify-between gap-[50px]">
+            <div className="px-[20px] md:px-[40px] flex flex-row justify-between mt-[50px]">
+                <div className="flex flex-col md:flex-row justify-between gap-y-[20px] gap-x-[90px]">
                     <div className="flex flex-col gap-[8px]">
                         <p className="font-semibold text-[14px] mb-[2px]">Let Us Help You</p>
                         <p className="text-[#3C4859] text-[13px] cursor-pointer">Accessibility Statement</p>
@@ -35,7 +39,7 @@ const Footer = () => {
                         <p className="text-[#3C4859] text-[13px] cursor-pointer">FAQs</p>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row justify-between">
+                <div className="flex flex-col md:flex-row justify-between gap-[40px]">
                     <div className="flex flex-col gap-[8px]">
                         <p className="font-semibold text-[14px] mb-[2px]">Support</p>
                         <p className="text-[#3C4859] text-[13px] cursor-pointer">Showrooms</p>
@@ -43,16 +47,25 @@ const Footer = () => {
                         <p className="text-[#3C4859] text-[13px] cursor-pointer">Affiliates</p>
                         <p className="text-[#3C4859] text-[13px] cursor-pointer">After Service Sale</p>
                     </div>
-                    <div className="flex flex-col gap-[20px]">
+                    <div className="flex flex-col gap-[40px] md:gap-[20px]">
                         <div>
                             <p className="text-[#3C4859] text-[13px]">Follow us on social media:</p>
-                            <div className="flex flex-row justify-start">
-                                <div className="bg-[#1e293b] w-[20px] h-[20px] flex justify-center items-center rounded-full"><FaTwitter className="text-white"/></div>
-                                <div><FaFacebookF /></div>
-                                <div><FaInstagram /></div>
+                            <div className="flex flex-row justify-start items-center gap-[10px] mt-[8px]">
+                                <div className="bg-[#1e293b] w-[25px] h-[25px] p-[6px] flex justify-center items-center rounded-full"><FaTwitter className="text-white"/></div>
+                                <div className="bg-[#1e293b] w-[25px] h-[25px] p-[6px] flex justify-center items-center rounded-full"><FaFacebookF className="text-white"/></div>
+                                <div className="bg-[#1e293b] w-[25px] h-[25px] p-[6px] flex justify-center items-center rounded-full"><FaInstagram className="text-white"/></div>
                             </div>
                         </div>
+
+                        <div>
+                            <p className="text-[13px] font-semibold">Download our app</p>
+                            <img src={ gp } className="mt-[10px]"/>
+                            <img src={ app } className="mt-[10px]"/>
+                        </div>
                     </div>
+                    <Link to="/" className="cursor-pointer">
+                        <img src={logo} className="w-[90px] lg:w-[102px] ml-[30px] md:ml-0" />
+                    </Link>
                 </div>
             </div>
             
