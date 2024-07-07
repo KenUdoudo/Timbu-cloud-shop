@@ -1,3 +1,6 @@
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
     return (
         <div className="mt-[30px]">
@@ -9,10 +12,10 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="px-[20px] md:px-[40px] flex flex-col md:flex-row justify-center">
-                <div className="flex flex-col md:flex-row">
-                    <div>
-                        <p className="font-semibold text-[14px]">Let Us Help You</p>
+            <div className="px-[20px] md:px-[40px] flex flex-col md:flex-row justify-between">
+                <div className="flex flex-col md:flex-row justify-between gap-[50px]">
+                    <div className="flex flex-col gap-[8px]">
+                        <p className="font-semibold text-[14px] mb-[2px]">Let Us Help You</p>
                         <p className="text-[#3C4859] text-[13px] cursor-pointer">Accessibility Statement</p>
                         <p className="text-[#3C4859] text-[13px] cursor-pointer">Your Orders</p>
                         <p className="text-[#3C4859] text-[13px] cursor-pointer">Returns & Replacements</p>
@@ -23,8 +26,34 @@ const Footer = () => {
                         <p className="text-[#3C4859] text-[13px] cursor-pointer">Cookie Settings</p>
                         <p className="text-[#3C4859] text-[13px] cursor-pointer">Help Center</p>
                     </div>
+                    <div className="flex flex-col gap-[8px]">
+                        <p className="font-semibold text-[14px] mb-[2px]">About</p>
+                        <p className="text-[#3C4859] text-[13px] cursor-pointer">Contact Us</p>
+                        <p className="text-[#3C4859] text-[13px] cursor-pointer">Careers</p>
+                        <p className="text-[#3C4859] text-[13px] cursor-pointer">Blogs</p>
+                        <p className="text-[#3C4859] text-[13px] cursor-pointer">Customers Reviews</p>
+                        <p className="text-[#3C4859] text-[13px] cursor-pointer">FAQs</p>
+                    </div>
                 </div>
-
+                <div className="flex flex-col md:flex-row justify-between">
+                    <div className="flex flex-col gap-[8px]">
+                        <p className="font-semibold text-[14px] mb-[2px]">Support</p>
+                        <p className="text-[#3C4859] text-[13px] cursor-pointer">Showrooms</p>
+                        <p className="text-[#3C4859] text-[13px] cursor-pointer">Customer Service</p>
+                        <p className="text-[#3C4859] text-[13px] cursor-pointer">Affiliates</p>
+                        <p className="text-[#3C4859] text-[13px] cursor-pointer">After Service Sale</p>
+                    </div>
+                    <div className="flex flex-col gap-[20px]">
+                        <div>
+                            <p className="text-[#3C4859] text-[13px]">Follow us on social media:</p>
+                            <div className="flex flex-row justify-start">
+                                <div><FaTwitter /></div>
+                                <div><FaFacebookF /></div>
+                                <div><FaInstagram /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div>
