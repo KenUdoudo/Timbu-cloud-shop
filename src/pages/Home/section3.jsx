@@ -18,7 +18,7 @@ const Sec3home = () => {
             <p className="text-[20px] md:text-[38px] font-semibold">Featured Products</p>
 
             <div className="w-full flex flex-row justify-center flex-wrap gap-[20px] mt-[20px] md:mt-[40px]">
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ ac }/>
                     </div>
@@ -27,9 +27,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦298,490</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ tv }/>
                     </div>
@@ -38,9 +38,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦298,490</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ blender }/>
                     </div>
@@ -49,9 +49,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦48,990</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ fridge }/>
                     </div>
@@ -60,9 +60,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦1,421,290</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ icemaker }/>
                     </div>
@@ -71,9 +71,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦160,900</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ airfryer }/>
                     </div>
@@ -82,9 +82,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦60,000</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ washing }/>
                     </div>
@@ -93,9 +93,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦733,400</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ four }/>
                     </div>
@@ -104,9 +104,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦3,900,990</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ power }/>
                     </div>
@@ -115,9 +115,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦4,182,900</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ gen }/>
                     </div>
@@ -126,9 +126,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦3,597,900</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ toaster }/>
                     </div>
@@ -137,9 +137,9 @@ const Sec3home = () => {
                         <p className="font-semibold">₦28,400</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
-                <div className="w-[45%] md:w-[30%] lg:w-[20%]">
+                <div className="w-full md:w-[30%] lg:w-[20%]">
                     <div className="w-full border-[2px] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ solar }/>
                     </div>
@@ -148,7 +148,7 @@ const Sec3home = () => {
                         <p className="font-semibold">₦184,800</p>
                         <IoIosHeartEmpty />
                     </div>
-                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[13px] md:text-[16px]"><TbShoppingBag /> Add to Cart</p>
+                    <p className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"><TbShoppingBag /> Add to Cart</p>
                 </div>
             </div>
         </div>
