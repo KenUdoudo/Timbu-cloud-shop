@@ -1,6 +1,10 @@
+import Sec1cart from "./section1";
+
 const MyCart = () => {
     return (
-        <div></div>
+        <div className="font-pop">
+            <Sec1cart />
+        </div>
     );
 }
  
