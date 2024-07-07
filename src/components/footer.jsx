@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="px-[20px] md:px-[40px] flex flex-row justify-between mt-[50px]">
+            <div className="px-[20px] md:px-[40px] flex flex-row justify-between mt-[50px] gap-x-[40px]">
                 <div className="flex flex-col md:flex-row justify-between gap-y-[20px] gap-x-[90px]">
                     <div className="flex flex-col gap-[8px]">
                         <p className="font-semibold text-[14px] mb-[2px]">Let Us Help You</p>
