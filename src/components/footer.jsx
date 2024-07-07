@@ -8,6 +8,8 @@ const Footer = () => {
                     <p className="bg-[#ffbaba] text-[13px] py-[10px] px-[20px] font-semibold rounded-[8px] cursor-pointer">Subscribe</p>
                 </div>
             </div>
+
+            
         </div>
     );
 }
