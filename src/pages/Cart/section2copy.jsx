@@ -2,6 +2,10 @@ import { HiOutlineTrash } from "react-icons/hi2";
 import { FaPlusSquare } from "react-icons/fa";
 import { FaMinusSquare } from "react-icons/fa";
 import four from './assets/4k.png';
+import icemaker from './assets/something.png';
+import gen from './assets/gen.png';
+import power from './assets/power.png';
+import blender from './assets/blender.png';
 
 const Sec2cart = () => {
     
@@ -30,6 +34,66 @@ const Sec2cart = () => {
                     <FaPlusSquare className="text-[#2972FF]"/>
                   </div>
                   <p className="font-semibold">₦3,900,990</p>
+                </div>
+                <hr className="mt-[20px] "/>
+                <div className="w-full flex justify-between items-center">
+                  <div className="flex items-center gap-[5px]">
+                    <HiOutlineTrash className="text-[#DD2C00]"/>
+                    <img src={ icemaker } className="w-[100px]"/>
+                    <p className="text-[10px]">HISENSE 20KG ICE MAKER ICM2011</p>
+                  </div>
+                  <p className="font-semibold">₦160,900</p>
+                  <div className="flex items-center gap-[5px]">
+                    <FaMinusSquare className="text-[#818181]"/>
+                    <p className="text-[12px]">2</p>
+                    <FaPlusSquare className="text-[#2972FF]"/>
+                  </div>
+                  <p className="font-semibold">₦321,800</p>
+                </div>
+                <hr className="mt-[20px] "/>
+                <div className="w-full flex justify-between items-center">
+                  <div className="flex items-center gap-[5px]">
+                    <HiOutlineTrash className="text-[#DD2C00]"/>
+                    <img src={ gen } className="w-[100px]"/>
+                    <p className="text-[10px]">MAXI E17000KWH GENERATOR 21.25 KVA</p>
+                  </div>
+                  <p className="font-semibold">₦3,597,900</p>
+                  <div className="flex items-center gap-[5px]">
+                    <FaMinusSquare className="text-[#818181]"/>
+                    <p className="text-[12px]">2</p>
+                    <FaPlusSquare className="text-[#2972FF]"/>
+                  </div>
+                  <p className="font-semibold">₦3,597,900</p>
+                </div>
+                <hr className="mt-[20px] "/>
+                <div className="w-full flex justify-between items-center">
+                  <div className="flex items-center gap-[5px]">
+                    <HiOutlineTrash className="text-[#DD2C00]"/>
+                    <img src={ power } className="w-[100px]"/>
+                    <p className="text-[10px]">HUAWEI -M 2.5KW POWER INVERTER</p>
+                  </div>
+                  <p className="font-semibold">₦4,182,900</p>
+                  <div className="flex items-center gap-[5px]">
+                    <FaMinusSquare className="text-[#818181]"/>
+                    <p className="text-[12px]">2</p>
+                    <FaPlusSquare className="text-[#2972FF]"/>
+                  </div>
+                  <p className="font-semibold">₦4,182,900</p>
+                </div>
+                <hr className="mt-[20px] "/>
+                <div className="w-full flex justify-between items-center">
+                  <div className="flex items-center gap-[5px]">
+                    <HiOutlineTrash className="text-[#DD2C00]"/>
+                    <img src={ blender } className="w-[100px]"/>
+                    <p className="text-[10px]">HUAWEI -M 2.5KW POWER INVERTER</p>
+                  </div>
+                  <p className="font-semibold">₦4,182,900</p>
+                  <div className="flex items-center gap-[5px]">
+                    <FaMinusSquare className="text-[#818181]"/>
+                    <p className="text-[12px]">2</p>
+                    <FaPlusSquare className="text-[#2972FF]"/>
+                  </div>
+                  <p className="font-semibold">₦4,182,900</p>
                 </div>
               </div>
               <div className="md:hidden w-full">
