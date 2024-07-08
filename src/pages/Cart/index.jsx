@@ -1,5 +1,5 @@
 import Sec1cart from "./section1";
-import Sec2cart from "./section2copy";
+import Sec2cart from "./section2";
 
 const MyCart = () => {
     return (
