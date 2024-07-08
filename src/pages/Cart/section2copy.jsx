@@ -7,15 +7,15 @@ const Sec2cart = () => {
     
 
     return (
-        <div className="px-[20px] md:px-[40px] w-full mt-[70px] flex flex-row items-start gap-x-[5px]">
-            <div className="w-[75%]">
-              <div className="w-full flex justify-around font-semibold">
+        <div className="px-[20px] md:px-[40px] w-full mt-[20px] md:mt-[70px] flex flex-col lg:flex-row items-start gap-x-[5px]">
+            <div className="w-full lg:w-[75%]">
+              <div className="w-full hidden md:flex justify-around font-semibold">
                 <p className="px-[90px]">PRODUCT NAME</p>
                 <p>PRICE</p>
                 <p>QUANTITY</p>
                 <p>TOTAL</p>
               </div>
-              <div className="w-full">
+              <div className="hidden md:block w-full">
                 <hr className="mt-[20px] "/>
                 <div className="w-full flex justify-between items-center">
                   <div className="flex items-center gap-[5px]">
@@ -25,18 +25,34 @@ const Sec2cart = () => {
                   </div>
                   <p className="font-semibold">₦3,900,990</p>
                   <div className="flex items-center gap-[5px]">
-                    <FaMinusSquare />
+                    <FaMinusSquare className="text-[#818181]"/>
                     <p className="text-[12px]">1</p>
                     <FaPlusSquare className="text-[#2972FF]"/>
                   </div>
                   <p className="font-semibold">₦3,900,990</p>
                 </div>
               </div>
-
-
-
+              <div className="md:hidden w-full">
+                <div className="w-full flex justify-between items-start">
+                  <div className="flex items-center gap-[5px]">
+                    <HiOutlineTrash className="text-[#DD2C00]"/>
+                    <img src={ four } className="w-[100px]"/>
+                  </div>
+                  <div>
+                    <p className="text-[10px]">HISENSE 100 INCH U7K SERIES ULED 4K</p>
+                    <div className="w-full flex justify-between items-center">
+                      <p className="font-semibold">₦3,900,990</p>
+                      <div className="flex items-center gap-[5px]">
+                        <FaMinusSquare className="text-[#818181]"/>
+                        <p className="text-[12px]">1</p>
+                        <FaPlusSquare className="text-[#2972FF]"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="w-[25%] border-[1px] border-[#9DBEFF] rounded-[8px] p-[10px]">
+            <div className="w-full lg:w-[25%] border-[1px] border-[#9DBEFF] rounded-[8px] p-[10px]">
               <p className="font-semibold">Order Summary</p>
               <div className="w-full flex justify-between mt-[20px]">
                 <p className="text-[#818181] text-[13px]">Sub-Total</p>
