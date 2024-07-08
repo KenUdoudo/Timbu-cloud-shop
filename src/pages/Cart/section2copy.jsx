@@ -33,23 +33,28 @@ const Sec2cart = () => {
                 </div>
               </div>
               <div className="md:hidden w-full">
-                <div className="w-full flex justify-between items-start">
+                <div className="w-full flex justify-between items-center">
                   <div className="flex items-center gap-[5px]">
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ four } className="w-[100px]"/>
                   </div>
                   <div>
                     <p className="text-[10px]">HISENSE 100 INCH U7K SERIES ULED 4K</p>
-                    <div className="w-full flex justify-between items-center">
-                      <p className="font-semibold">₦3,900,990</p>
+                    <div className="w-full flex justify-between items-center mt-[5px]">
+                      <p className="font-semibold text-[10px]">₦3,900,990</p>
                       <div className="flex items-center gap-[5px]">
                         <FaMinusSquare className="text-[#818181]"/>
-                        <p className="text-[12px]">1</p>
+                        <p className="text-[10px]">1</p>
                         <FaPlusSquare className="text-[#2972FF]"/>
                       </div>
                     </div>
+                    <div className="w-full flex justify-start gap-[20px] mt-[20px]">
+                      <p className="font-semibold text-[10px]">Total:</p>
+                      <p className="font-semibold text-[10px]">₦3,900,990</p>
+                    </div>
                   </div>
                 </div>
+                <hr className=""/>
               </div>
             </div>
             <div className="w-full lg:w-[25%] border-[1px] border-[#9DBEFF] rounded-[8px] p-[10px]">
@@ -65,8 +70,8 @@ const Sec2cart = () => {
               <hr className="w-full my-[10px]"/>
 
               <div className="w-full flex items-center">
-                <input type="text" placeholder="Coupon Code" className="py-[5px] pl-[5px] pr-[10px] text-[10px] border-[1px] rounded-[8px]"/>
-                <p className="bg-[#70A1FF] text-white px-[20px] py-[5px] rounded-[8px] text-[13px]">Apply</p>
+                <input type="text" placeholder="Coupon Code" className="py-[5px] pl-[10px] md:pl-[5px] pr-[90px] md:pr-[10px] text-[10px] border-[1px] rounded-[8px]"/>
+                <p className="bg-[#70A1FF] text-white px-[30px] md:px-[20px] py-[5px] rounded-[8px] text-[13px]">Apply</p>
               </div>
 
               <div className="w-full flex justify-between mt-[8px]">
