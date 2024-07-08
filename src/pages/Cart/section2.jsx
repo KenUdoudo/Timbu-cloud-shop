@@ -22,78 +22,78 @@ const Sec2cart = () => {
               <div className="hidden md:block w-full">
                 <hr className="mt-[20px] "/>
                 <div className="w-full flex justify-between items-center">
-                  <div className="flex items-center gap-[5px]">
+                  <div className="flex items-center gap-[5px] w-[80%]">
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ four } className="w-[100px]"/>
                     <p className="text-[10px]">HISENSE 100 INCH U7K SERIES ULED 4K</p>
                   </div>
-                  <p className="font-semibold">₦3,900,990</p>
-                  <div className="flex items-center gap-[5px]">
+                  <p className="font-semibold w-[20%]">₦3,900,990</p>
+                  <div className="flex items-center gap-[5px] w-[20%]">
                     <FaMinusSquare className="text-[#818181]"/>
                     <p className="text-[12px]">1</p>
                     <FaPlusSquare className="text-[#2972FF]"/>
                   </div>
-                  <p className="font-semibold">₦3,900,990</p>
+                  <p className="font-semibold w-[20%]">₦3,900,990</p>
                 </div>
                 <hr className="mt-[20px] "/>
                 <div className="w-full flex justify-between items-center">
-                  <div className="flex items-center gap-[5px]">
+                  <div className="flex items-center gap-[5px] w-[80%]">
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ icemaker } className="w-[100px]"/>
                     <p className="text-[10px]">HISENSE 20KG ICE MAKER ICM2011</p>
                   </div>
-                  <p className="font-semibold">₦160,900</p>
-                  <div className="flex items-center gap-[5px]">
+                  <p className="font-semibold w-[20%]">₦160,900</p>
+                  <div className="flex items-center gap-[5px] w-[20%]">
                     <FaMinusSquare className="text-[#818181]"/>
                     <p className="text-[12px]">2</p>
                     <FaPlusSquare className="text-[#2972FF]"/>
                   </div>
-                  <p className="font-semibold">₦321,800</p>
+                  <p className="font-semibold w-[20%]">₦321,800</p>
                 </div>
                 <hr className="mt-[20px] "/>
                 <div className="w-full flex justify-between items-center">
-                  <div className="flex items-center gap-[5px]">
+                  <div className="flex items-center gap-[5px] w-[80%]">
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ gen } className="w-[100px]"/>
                     <p className="text-[10px]">MAXI E17000KWH GENERATOR 21.25 KVA</p>
                   </div>
-                  <p className="font-semibold">₦3,597,900</p>
-                  <div className="flex items-center gap-[5px]">
+                  <p className="font-semibold w-[20%]">₦3,597,900</p>
+                  <div className="flex items-center gap-[5px] w-[20%]">
                     <FaMinusSquare className="text-[#818181]"/>
                     <p className="text-[12px]">1</p>
                     <FaPlusSquare className="text-[#2972FF]"/>
                   </div>
-                  <p className="font-semibold">₦3,597,900</p>
+                  <p className="font-semibold w-[20%]">₦3,597,900</p>
                 </div>
                 <hr className="mt-[20px] "/>
                 <div className="w-full flex justify-between items-center">
-                  <div className="flex items-center gap-[5px]">
+                  <div className="flex items-center gap-[5px] w-[80%]">
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ power } className="w-[100px]"/>
                     <p className="text-[10px]">HUAWEI -M 2.5KW POWER INVERTER</p>
                   </div>
-                  <p className="font-semibold">₦4,182,900</p>
-                  <div className="flex items-center gap-[5px]">
+                  <p className="font-semibold w-[20%]">₦4,182,900</p>
+                  <div className="flex items-center gap-[5px] w-[20%]">
                     <FaMinusSquare className="text-[#818181]"/>
                     <p className="text-[12px]">1</p>
                     <FaPlusSquare className="text-[#2972FF]"/>
                   </div>
-                  <p className="font-semibold">₦4,182,900</p>
+                  <p className="font-semibold w-[20%]">₦4,182,900</p>
                 </div>
                 <hr className="mt-[20px] "/>
                 <div className="w-full flex justify-between items-center">
-                  <div className="flex items-center gap-[5px]">
+                  <div className="flex items-center gap-[5px] w-[80%]">
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ blender } className="w-[100px]"/>
                     <p className="text-[10px]">BINATONE BLENDER</p>
                   </div>
-                  <p className="font-semibold">₦48,990</p>
-                  <div className="flex items-center gap-[5px]">
+                  <p className="font-semibold w-[20%]">₦48,990</p>
+                  <div className="flex items-center gap-[5px] w-[20%]">
                     <FaMinusSquare className="text-[#818181]"/>
                     <p className="text-[12px]">3</p>
                     <FaPlusSquare className="text-[#2972FF]"/>
                   </div>
-                  <p className="font-semibold">₦146,970</p>
+                  <p className="font-semibold w-[20%]">₦146,970</p>
                 </div>
               </div>
               <div className="md:hidden w-full">
