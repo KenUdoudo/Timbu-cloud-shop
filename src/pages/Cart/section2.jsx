@@ -102,7 +102,7 @@ const Sec2cart = () => {
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ four } className="w-[100px]"/>
                   </div>
-                  <div>
+                  <div className="w-[60%]">
                     <p className="text-[10px]">HISENSE 100 INCH U7K SERIES ULED 4K</p>
                     <div className="w-full flex justify-between items-center mt-[5px]">
                       <p className="font-semibold text-[10px]">₦3,900,990</p>
@@ -124,7 +124,7 @@ const Sec2cart = () => {
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ icemaker } className="w-[100px]"/>
                   </div>
-                  <div>
+                  <div className="w-[60%]">
                     <p className="text-[10px]">HISENSE 20KG ICE MAKER ICM2011</p>
                     <div className="w-full flex justify-between items-center mt-[5px]">
                       <p className="font-semibold text-[10px]">₦160,900</p>
@@ -146,7 +146,7 @@ const Sec2cart = () => {
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ gen } className="w-[100px]"/>
                   </div>
-                  <div>
+                  <div className="w-[60%]">
                     <p className="text-[10px]">MAXI E17000KWH GENERATOR 21.25 KVA</p>
                     <div className="w-full flex justify-between items-center mt-[5px]">
                       <p className="font-semibold text-[10px]">₦3,597,900</p>
@@ -168,7 +168,7 @@ const Sec2cart = () => {
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ power } className="w-[100px]"/>
                   </div>
-                  <div>
+                  <div className="w-[60%]">
                     <p className="text-[10px]">HUAWEI -M 2.5KW POWER INVERTER</p>
                     <div className="w-full flex justify-between items-center mt-[5px]">
                       <p className="font-semibold text-[10px]">₦4,182,900</p>
@@ -190,7 +190,7 @@ const Sec2cart = () => {
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ blender } className="w-[100px]"/>
                   </div>
-                  <div>
+                  <div className="w-[60%]">
                     <p className="text-[10px]">BINATONE BLENDER</p>
                     <div className="w-full flex justify-between items-center mt-[5px]">
                       <p className="font-semibold text-[10px]">₦48,990</p>
