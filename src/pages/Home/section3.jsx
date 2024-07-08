@@ -143,7 +143,7 @@ const Sec3home = () => {
                     <div className="w-full border-[2px] border-[#9DBEFF] rounded-[8px] flex justify-center items-center  h-[300px]">
                         <img src={ solar } className="w-auto h-[250px]"/>
                     </div>
-                    <p className='text-[9px] mt-[10px]'>MAXI TOASTER 2 SLICES</p>
+                    <p className='text-[9px] mt-[10px]'>Jinko 625W Monofacial Solar Panel</p>
                     <div className="flex justify-between items-center">
                         <p className="font-semibold">₦184,800</p>
                         <IoIosHeartEmpty />
