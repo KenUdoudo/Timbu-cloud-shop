@@ -85,15 +85,15 @@ const Sec2cart = () => {
                   <div className="flex items-center gap-[5px]">
                     <HiOutlineTrash className="text-[#DD2C00]"/>
                     <img src={ blender } className="w-[100px]"/>
-                    <p className="text-[10px]">HUAWEI -M 2.5KW POWER INVERTER</p>
+                    <p className="text-[10px]">BINATONE BLENDER</p>
                   </div>
-                  <p className="font-semibold">₦4,182,900</p>
+                  <p className="font-semibold">₦48,990</p>
                   <div className="flex items-center gap-[5px]">
                     <FaMinusSquare className="text-[#818181]"/>
                     <p className="text-[12px]">2</p>
                     <FaPlusSquare className="text-[#2972FF]"/>
                   </div>
-                  <p className="font-semibold">₦4,182,900</p>
+                  <p className="font-semibold">₦146,970</p>
                 </div>
               </div>
               <div className="md:hidden w-full">
