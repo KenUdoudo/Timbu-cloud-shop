@@ -222,9 +222,9 @@ const Sec2cart = () => {
               </div>
               <hr className="w-full my-[10px]"/>
 
-              <div className="w-full flex items-center">
-                <input type="text" placeholder="Coupon Code" className="py-[5px] pl-[10px] md:pl-[5px] pr-[90px] md:pr-[10px] text-[10px] border-[1px] rounded-[8px]"/>
-                <p className="bg-[#70A1FF] text-white px-[30px] md:px-[20px] py-[5px] rounded-[8px] text-[13px]">Apply</p>
+              <div className="w-full flex items-center gap-[5px]">
+                <input type="text" placeholder="Coupon Code" className="py-[5px] pl-[10px] md:pl-[5px] w-[70%] text-[10px] border-[1px] rounded-[8px]"/>
+                <p className="bg-[#70A1FF] text-white w-[30%] py-[5px] rounded-[8px] text-[13px]">Apply</p>
               </div>
 
               <div className="w-full flex justify-between mt-[8px]">
