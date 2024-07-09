@@ -15,10 +15,22 @@ const Navbar = () => {
   return (
     <div className="px-[20px] md:px-[40px] py-[20px]  w-full font-pop">
       <div className="flex flex-row justify-between items-center">
+        <button onClick={toggleMenu} className="block lg:hidden z-30">
+          <CgMenuLeft className="h-[25px] w-[25px]" />
+        </button>
         <Link to="/" className="cursor-pointer">
           <img src={logo} className="w-[90px] lg:w-[102px]" />
         </Link>
-
+        <div className="relative">
+        <Link
+            to="/mycart"
+            className="bg-[#2972FF] hover:bg-[#6893eb] md:hidden flex items-center text-white gap-[6px] py-[5px] px-[8px] rounded-[8px]"
+          >
+            <TbShoppingBag />
+            My Cart
+          </Link>
+          <p className="bg-[#2972FF] border-[2px] border-white p-[3px] rounded-full text-[8px] absolute">5</p>
+          </div>
         <div
           className={`fixed top-0 right-0 h-full z-20 bg-[#e9e9e9] w-[75%] md:w-[50%] transform ${
             isOpen ? "-translate-x-0" : "translate-x-full"
@@ -59,18 +71,10 @@ const Navbar = () => {
         <div className="hidden lg:flex flex-row justify-between items-center gap-[10px] lg:gap-[25px] text-nowrap">
           <Link to="/products">Products</Link>
           <Link to="/contactus">Contact Us</Link>
-          <Link
-            to="/mycart"
-            className="bg-[#2972FF] hover:bg-[#6893eb] flex items-center text-white gap-[10px] py-[5px] px-[8px] rounded-[8px]"
-          >
-            <TbShoppingBag />
-            My Cart
-          </Link>
+          
         </div>
 
-        <button onClick={toggleMenu} className="block lg:hidden z-30">
-          <CgMenuLeft className="h-[25px] w-[25px]" />
-        </button>
+        
       </div>
     </div>
   );
