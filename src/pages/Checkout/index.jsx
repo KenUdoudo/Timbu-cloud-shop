@@ -1,6 +1,9 @@
+import Sec1check from "./section1";
 const Checkout = () => {
     return (
-        <div></div>
+        <div className="font-pop">
+            <Sec1check />
+        </div>
     );
 }
  
