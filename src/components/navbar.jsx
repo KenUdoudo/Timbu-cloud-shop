@@ -62,8 +62,8 @@ const Navbar = () => {
         <Search />
 
         <div className="hidden lg:flex flex-row justify-between items-center gap-[10px] lg:gap-[25px] text-nowrap">
-          <Link to="/products">Products</Link>
-          <Link to="/contactus">Contact Us</Link>
+          <Link to="/notfound">Products</Link>
+          <Link to="/notfound">Contact Us</Link>
           <div className="relative">
         <Link
             to="/mycart"
