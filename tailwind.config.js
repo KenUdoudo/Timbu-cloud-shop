@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         pop: ["Poppins", "system-ui" ],
+        inter: ["Inter", "system-ui" ],
       },
     },
   },

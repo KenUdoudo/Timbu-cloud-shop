@@ -7,8 +7,8 @@ import logo from "../assets/Logo.svg";
 import { Link } from "react-router-dom";
 const Footer = () => {
     return (
-        <div className="mt-[30px] font-pop">
-            <div className="w-full py-[20px] px-[20px] md:px-[40px] bg-[#2972FF] flex flex-col gap-y-[10px] md:flex-row justify-between items-center">
+        <div className="mt-[30px]">
+            <div className="w-full py-[20px] px-[20px] md:px-[40px] bg-[#2972FF] flex flex-col gap-y-[10px] md:flex-row justify-between items-center font-pop">
                 <p className="text-white text-[17px]">Subscribe to our newsletter to get updates on our latest offers!</p>
                 <div className="flex flex-col md:flex-row justify-between items-center gap-y-[10px] gap-x-[20px] w-full md:w-auto">
                     <input type="email" placeholder="Enter your Email Address" className="py-[10px] pl-[20px] pr-[60px] text-[13px] rounded-[8px] w-full md:w-auto"/>
@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="px-[20px] md:px-[40px] flex flex-row justify-between mt-[50px] gap-x-[40px]">
+            <div className="px-[20px] md:px-[40px] flex flex-row justify-between mt-[50px] gap-x-[40px] font-inter">
                 <div className="flex flex-col md:flex-row justify-between gap-y-[20px] gap-x-[90px]">
                     <div className="flex flex-col gap-[8px]">
                         <p className="font-semibold text-[14px] mb-[2px]">Let Us Help You</p>
