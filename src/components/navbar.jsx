@@ -37,7 +37,7 @@ const Navbar = () => {
             isOpen ? "translate-x-0" : "-translate-x-full"
           } transition-transform duration-500 ease-in-out overflow-hidden`}
         >
-          <div className="flex flex-col justify-between items-start pt-[60px] pl-[20px] gap-[25px]">
+          <div className="flex flex-col justify-between items-start pt-[60px] pl-[20px] gap-[16px]">
           <div className="flex flex-row items-center w-[250px] text-[12px] h-[42px] border bg-white border-[#818181] rounded-[12px]">
               <CiSearch className="flex-shrink-0 ml-[10px]" />
               <input
