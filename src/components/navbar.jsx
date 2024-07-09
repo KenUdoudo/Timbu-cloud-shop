@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link to="/" className="cursor-pointer">
           <img src={logo} className="w-[90px] lg:w-[102px]" />
         </Link>
-        <div className="relative">
+        <div className="md:hidden relative">
         <Link
             to="/mycart"
             className="bg-[#2972FF] hover:bg-[#6893eb] md:hidden flex items-center text-white gap-[6px] py-[5px] px-[8px] rounded-[8px]"
@@ -29,7 +29,7 @@ const Navbar = () => {
             <TbShoppingBag />
             My Cart
           </Link>
-          <p className="bg-[#2972FF] border-[2px] border-white p-[3px] rounded-full text-[8px] absolute">5</p>
+          <p className="bg-[#2972FF] border-[2px] border-white w-[20px] h-[20px] flex justify-center items-center rounded-full text-[10px] top-[-7px] right-[-7px] absolute text-white">5</p>
           </div>
         <div
           className={`fixed top-0 right-0 h-full z-20 bg-[#e9e9e9] w-[75%] md:w-[50%] transform ${
@@ -39,13 +39,6 @@ const Navbar = () => {
           <div className="flex flex-col justify-between items-center py-[40px] gap-[25px]">
             <Link to="/products">Products</Link>
             <Link to="/contactus">Contact Us</Link>
-            <Link
-              to="/mycart"
-              className="bg-[#2972FF] hover:bg-[#6893eb] flex items-center text-white gap-[10px] py-[5px] px-[8px] rounded-[8px]"
-            >
-              <TbShoppingBag />
-              My Cart
-            </Link>
             <div className="flex flex-row items-center w-[250px] text-[8px] h-[42px] border bg-white border-[#2972FF] rounded-[12px]">
               <CiSearch className="flex-shrink-0 ml-[10px]" />
               <input

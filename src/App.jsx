@@ -1,6 +1,7 @@
 import './App.css'
 import Footer from './components/footer';
 import Navbar from './components/navbar';
+import NotFound from './components/notfound';
 import Products from './pages/products';
 import Contact from './pages/contactus';
 import Home from './pages/Home';
@@ -19,6 +20,7 @@ function App() {
             <Route path='/contactus' element={<Contact />} />
             <Route path='/mycart' element={<MyCart />} />
             <Route path='/checkout' element={<Checkout />} />
+            <Route path='/notfound' element={<NotFound />} />
           </Routes>
         </div>
         <Footer />
