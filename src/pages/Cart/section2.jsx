@@ -231,7 +231,7 @@ const Sec2cart = () => {
                 <p className="text-[14px]">Total Price</p>
                 <p className="text-[#2972FF] text-[13px]">₦12,223,860</p>
               </div>
-              <Link to='/checkout' className="bg-[#2972FF] hover:bg-[#6893eb] text-white w-full py-[7px] rounded-[8px] cursor-pointer mt-[20px] text-center">Checkout</Link>
+              <Link to='/checkout'><p className="bg-[#2972FF] hover:bg-[#6893eb] text-white w-full py-[7px] rounded-[8px] cursor-pointer mt-[20px] text-center">Checkout</p></Link>
             </div>
 
         </div>
