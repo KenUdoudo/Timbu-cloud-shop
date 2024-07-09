@@ -77,7 +77,7 @@ const Sec2check = () => {
                         <p className='text-[14px] md:text-[16px] '>x1</p>
                     </div>
                 </div>
-                <hr />
+                <hr className='pb-[10px]'/>
                 <div className='w-full flex gap-[5px] justify-between items-center'>
                     <img src={ icemaker } className="w-[100px]"/>
                     <div className='flex justify-between items-center gap-[10px] w-[70%]'>
@@ -88,7 +88,7 @@ const Sec2check = () => {
                         <p className='text-[14px] md:text-[16px] '>x2</p>
                     </div>
                 </div>
-                <hr />
+                <hr className='pb-[10px]'/>
                 <div className='w-full flex gap-[5px] justify-between items-center'>
                     <img src={ gen } className="w-[100px]"/>
                     <div className='flex justify-between items-center gap-[10px] w-[70%]'>
@@ -99,7 +99,7 @@ const Sec2check = () => {
                         <p className='text-[14px] md:text-[16px] '>x1</p>
                     </div>
                 </div>
-                <hr />
+                <hr className='pb-[10px]'/>
                 <div className='w-full flex gap-[5px] justify-between items-center'>
                     <img src={ power } className="w-[100px]"/>
                     <div className='flex justify-between items-center gap-[10px] w-[70%]'>
@@ -110,7 +110,7 @@ const Sec2check = () => {
                         <p className='text-[14px] md:text-[16px] '>x1</p>
                     </div>
                 </div>
-                <hr />
+                <hr className='pb-[10px]'/>
                 <div className='w-full flex gap-[5px] justify-between items-center'>
                     <img src={ blender } className="w-[100px]"/>
                     <div className='flex justify-between items-center gap-[10px] w-[70%]'>
@@ -121,7 +121,7 @@ const Sec2check = () => {
                         <p className='text-[14px] md:text-[16px] '>x3</p>
                     </div>
                 </div>
-                <hr />
+                <hr className='pb-[10px]'/>
 
               <div className="w-full flex justify-between mt-[20px]">
                 <p className="text-[#818181] text-[13px]">Sub-Total</p>
