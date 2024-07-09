@@ -2,7 +2,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 const Search = () => {
     return (  
-        <div className="items-center justify-center hidden md:flex">
+        <div className="items-center justify-center hidden lg:flex">
             <div className="flex flex-row items-center w-[100px] md:w-[350px] lg:w-[500px] h-[42px] border border-[#2972FF] rounded-[12px]">
                 <CiSearch className="flex-shrink-0 ml-[10px]"/>
                 <input 

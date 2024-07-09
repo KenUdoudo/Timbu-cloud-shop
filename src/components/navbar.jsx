@@ -21,10 +21,10 @@ const Navbar = () => {
         <Link to="/" className="cursor-pointer">
           <img src={logo} className="w-[90px] lg:w-[102px]" />
         </Link>
-        <div className="md:hidden relative">
+        <div className="lg:hidden relative">
         <Link
             to="/mycart"
-            className="bg-[#2972FF] hover:bg-[#6893eb] md:hidden flex items-center text-white gap-[6px] py-[5px] px-[8px] rounded-[8px]"
+            className="bg-[#2972FF] hover:bg-[#6893eb] lg:hidden flex items-center text-white gap-[6px] py-[5px] px-[8px] rounded-[8px]"
           >
             <TbShoppingBag />
             My Cart
@@ -64,7 +64,16 @@ const Navbar = () => {
         <div className="hidden lg:flex flex-row justify-between items-center gap-[10px] lg:gap-[25px] text-nowrap">
           <Link to="/products">Products</Link>
           <Link to="/contactus">Contact Us</Link>
-          
+          <div className="relative">
+        <Link
+            to="/mycart"
+            className="bg-[#2972FF] hover:bg-[#6893eb] flex items-center text-white gap-[6px] py-[5px] px-[8px] rounded-[8px]"
+          >
+            <TbShoppingBag />
+            My Cart
+          </Link>
+          <p className="bg-[#2972FF] border-[2px] border-white w-[20px] h-[20px] flex justify-center items-center rounded-full text-[10px] top-[-7px] right-[-7px] absolute text-white">5</p>
+          </div>
         </div>
 
         
