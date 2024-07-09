@@ -32,8 +32,8 @@ const Navbar = () => {
           <p className="bg-[#2972FF] border-[2px] border-white w-[20px] h-[20px] flex justify-center items-center rounded-full text-[10px] top-[-7px] right-[-7px] absolute text-white">5</p>
           </div>
         <div
-          className={`fixed top-0 right-0 h-full z-20 bg-[#e9e9e9] w-[75%] md:w-[50%] transform ${
-            isOpen ? "-translate-x-0" : "translate-x-full"
+          className={`fixed top-0 left-0 h-full z-20 bg-[#e9e9e9] w-[75%] md:w-[50%] transform ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
           } transition-transform duration-500 ease-in-out overflow-hidden`}
         >
           <div className="flex flex-col justify-between items-center py-[40px] gap-[25px]">
