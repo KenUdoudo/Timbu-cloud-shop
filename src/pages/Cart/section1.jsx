@@ -4,7 +4,7 @@ import { Bs2CircleFill } from "react-icons/bs";
 const Sec1cart = () => {
     return ( 
         <div className="px-[20px] md:px-[40px] w-full">
-            <p className="text-[12px] md:text-[16px]"><Link to='/'>Home </Link>/ <Link to='/mycart'>Cart</Link></p>
+            <p className="text-[12px] md:text-[16px]"><Link to='/' className="text-[#818181]">Home </Link>/ <Link to='/mycart'>Cart</Link></p>
             <div className="mt-[32px] md:mt-[40px] w-full">
                 <p className="text-[24px] md:text-[30px] font-semibold">Cart</p>
                 <div className="w-full flex justify-around items-center">

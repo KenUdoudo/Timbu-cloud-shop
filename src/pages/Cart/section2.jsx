@@ -11,7 +11,7 @@ const Sec2cart = () => {
     
 
     return (
-        <div className="px-[20px] md:px-[40px] w-full mt-[20px] md:mt-[70px] flex flex-col lg:flex-row items-start gap-x-[5px]">
+        <div className="px-[20px] md:px-[40px] w-full mt-[20px] md:mt-[70px] flex flex-col lg:flex-row items-start gap-x-[5px] gap-y-[30px]">
             <div className="w-full lg:w-[75%]">
               <div className="w-full hidden md:flex justify-around font-semibold">
                 <p className="px-[90px]">PRODUCT NAME</p>
