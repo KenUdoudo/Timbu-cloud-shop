@@ -7,6 +7,7 @@ import Search from "./search";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 import { PiCaretDownLight } from "react-icons/pi";
+import { IoCloseOutline } from "react-icons/io5";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +18,9 @@ const Navbar = () => {
     <div className="px-[20px] md:px-[40px] py-[20px]  w-full font-pop">
       <div className="flex flex-row justify-between items-center">
         <button onClick={toggleMenu} className="block lg:hidden z-30">
-          <CgMenuLeft className="h-[25px] w-[25px]" />
+          
+          {isOpen ? <IoCloseOutline className="h-[25px] w-[25px]" /> : <CgMenuLeft className="h-[25px] w-[25px]" />}
+          
         </button>
         <Link to="/" className="cursor-pointer">
           <img src={logo} className="w-[90px] lg:w-[102px]" />
