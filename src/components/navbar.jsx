@@ -50,6 +50,10 @@ const Navbar = () => {
             <Link to="/notfound" className="text-[12px]">Products</Link>
             <Link to="/notfound" className="text-[12px]">Contact Us</Link>
             
+            <p className="mt-[16px] text-[12px] text-[#696969]">SOCIAL</p>
+            <p className="text-[12px]">X</p>
+            <p className="text-[12px]">Facebook</p>
+            <p className="text-[12px]">Instagram</p>
           </div>
         </div>
 
