@@ -18,20 +18,25 @@ import solar from './assets/solar.png';
 const Sec3home = () => {
     const { addItemToCart } = useCart();
 
-    const products = [
-        { id: 1, name: 'BRUHM BLACK AC BAS-09ICQB', price: 298490, img: ac },
-        { id: 2, name: 'BRUHM LED BTF43SV FHD , SMART OS TV', price: 298490, img: tv },
-        { id: 3, name: 'BINATONE BLENDER', price: 48990, img: blender },
-        { id: 4, name: 'BRUHM BLACK REF BFQ-592EN', price: 1421290, img: fridge },
-        { id: 5, name: 'HISENSE 20KG ICE MAKER ICM2011', price: 160900, img: icemaker },
-        { id: 6, name: 'HISENSE H04AfBK1S1 4.5L AIR FRYER', price: 60000, img: airfryer },
-        { id: 7, name: 'LG F2V5FGPYJE 9/5KG FRONT LOAD', price: 733400, img: washing },
-        { id: 8, name: 'HISENSE 100 INCH U7K SERIES ULED 4K', price: 3900990, img: four },
-        { id: 9, name: 'HUAWEI -M 2.5kW POWER INVERTER', price: 4182900, img: power },
-        { id: 10, name: 'MAXI E17000KWH GENERATOR 21.25 KVA', price: 3597900, img: gen },
-        { id: 11, name: 'MAXI TOASTER 2 SLICES', price: 28400, img: toaster },
-        { id: 12, name: 'Jinko 625W Monofacial Solar Panel', price: 184800, img: solar }
-    ];
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            try {
+                const response = await fetch(`https://api.example.com/products/${PRODUCT_ID}`, {
+                    headers: {
+                        'Authorization': `Bearer ${API_KEY}`
+                    }
+                });
+                const data = await response.json();
+                setProducts(data);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        };
+
+        fetchProducts();
+    }, []);
 
     return (
         <div className="px-[20px] md:px-[40px] py-[20px]">
