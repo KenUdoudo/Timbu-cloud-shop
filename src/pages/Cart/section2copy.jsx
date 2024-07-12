@@ -3,7 +3,18 @@ import { useCart } from '../Cartcontext';
 import { HiOutlineTrash } from "react-icons/hi2";
 import { FaPlusSquare, FaMinusSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import ac from './assets/ac.png';
+import tv from './assets/tv.png';
+import blender from './assets/blender.png';
+import fridge from './assets/fridge.png';
+import icemaker from './assets/something.png';
+import airfryer from './assets/airfyer.png';
+import washing from './assets/washingmachine.png';
+import four from './assets/4k.png';
+import power from './assets/power.png';
+import gen from './assets/gen.png';
+import toaster from './assets/toaster.png';
+import solar from './assets/solar.png';
 const Sec2cart = () => {
   const { cart, removeItemFromCart, updateItemQuantity } = useCart();
 
