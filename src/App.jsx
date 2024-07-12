@@ -8,9 +8,11 @@ import Home from './pages/Home';
 import MyCart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { CartProvider } from './pages/Cartcontext';
 function App() {
-
+  
   return (
+    <CartProvider>
     <Router>
         <Navbar />
         <div className='content'>
@@ -26,6 +28,7 @@ function App() {
         <Footer />
         
     </Router>
+    </CartProvider>
   )
 }
 
