@@ -8,7 +8,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 import { PiCaretDownLight } from "react-icons/pi";
 import { IoCloseOutline } from "react-icons/io5";
-import { CartProvider } from '../pages/Cartcontext';
+import { CartContext } from '../pages/Cartcontext';
 import { useContext } from 'react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const { cart } = useContext(CartProvider);
+  const { cart } = useContext(CartContext);
   return (
     <div className="px-[20px] md:px-[40px] py-[20px]  w-full font-pop">
       <div className="flex flex-row justify-between items-center">
@@ -36,7 +36,7 @@ const Navbar = () => {
             <TbShoppingBag />
             My Cart
           </Link>
-          <p className="bg-[#2972FF] border-[2px] border-white w-[20px] h-[20px] flex justify-center items-center rounded-full text-[10px] top-[-7px] right-[-7px] absolute text-white">({cart.length})</p>
+          <p className="bg-[#2972FF] border-[2px] border-white w-[20px] h-[20px] flex justify-center items-center rounded-full text-[10px] top-[-7px] right-[-7px] absolute text-white">{cart.length}</p>
           </div>
         <div
           className={`fixed top-0 left-0 h-full z-20 bg-white w-[75%] md:w-[50%] transform ${
@@ -76,7 +76,7 @@ const Navbar = () => {
             <TbShoppingBag />
             My Cart
           </Link>
-          <p className="bg-[#2972FF] border-[2px] border-white w-[20px] h-[20px] flex justify-center items-center rounded-full text-[10px] top-[-7px] right-[-7px] absolute text-white">({cart.length})</p>
+          <p className="bg-[#2972FF] border-[2px] border-white w-[20px] h-[20px] flex justify-center items-center rounded-full text-[10px] top-[-7px] right-[-7px] absolute text-white">{cart.length}</p>
           </div>
         </div>
 
