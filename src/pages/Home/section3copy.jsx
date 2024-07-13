@@ -8,30 +8,13 @@ const Sec3home = () => {
     const { addItemToCart } = useCart();
 
     const [products, setProducts] = useState([]);
-    const [currentPage, setCurrentPage] = useState(1);
-    const [totalPages, setTotalPages] = useState(1);
 
     useEffect(() => {
-        fetch(`https://timbu-get-all-products.reavdev.workers.dev?organization_id=8ae37985db5c4bd88cfbd53f52972263&reverse_sort=false&page=${currentPage}&size=10&Appid=YO1NW8GUL4ENHX6&Apikey=ee17b5f35b76441a9736019dc474f62a20240712195531195532`)
+        fetch('https://timbu-get-all-products.reavdev.workers.dev?organization_id=8ae37985db5c4bd88cfbd53f52972263&reverse_sort=false&page=1&size=10&Appid=YO1NW8GUL4ENHX6&Apikey=ee17b5f35b76441a9736019dc474f62a20240712195531195532')
             .then(res => res.json())
-            .then(data => {
-                setProducts(data.items);
-                setTotalPages(data.totalPages || 1); 
-            })
+            .then(data => setProducts(data.items)) 
             .catch(err => console.error('Error fetching products:', err)); 
-    }, [currentPage]);
-
-    const handleNextPage = () => {
-        if (currentPage < totalPages) {
-            setCurrentPage(prevPage => prevPage + 1);
-        }
-    };
-
-    const handlePreviousPage = () => {
-        if (currentPage > 1) {
-            setCurrentPage(prevPage => prevPage - 1);
-        }
-    };
+    }, []);
 
     return (
         <div className="px-[20px] md:px-[40px] py-[20px]">
@@ -59,23 +42,6 @@ const Sec3home = () => {
                         </p>
                     </div>
                 ))}
-            </div>
-            <div className="flex justify-center items-center mt-[20px]">
-                <button 
-                    className="px-[10px] py-[5px] bg-gray-300 rounded mr-[10px] disabled:bg-gray-200"
-                    onClick={handlePreviousPage}
-                    disabled={currentPage === 1}
-                >
-                    Previous
-                </button>
-                <span>{currentPage} / {totalPages}</span>
-                <button 
-                    className="px-[10px] py-[5px] bg-gray-300 rounded ml-[10px] disabled:bg-gray-200"
-                    onClick={handleNextPage}
-                    disabled={currentPage === totalPages}
-                >
-                    Next
-                </button>
             </div>
         </div>
     );
