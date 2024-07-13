@@ -1,19 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { IoIosHeartEmpty } from "react-icons/io";
 import { TbShoppingBag } from "react-icons/tb";
 import { useCart } from '../Cartcontext';
-import ac from './assets/ac.png';
-import tv from './assets/tv.png';
-import blender from './assets/blender.png';
-import fridge from './assets/fridge.png';
-import icemaker from './assets/something.png';
-import airfryer from './assets/airfyer.png';
-import washing from './assets/washingmachine.png';
-import four from './assets/4k.png';
-import power from './assets/power.png';
-import gen from './assets/gen.png';
-import toaster from './assets/toaster.png';
-import solar from './assets/solar.png';
+
 
 const Sec3home = () => {
     const { addItemToCart } = useCart();
@@ -21,21 +10,10 @@ const Sec3home = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        const fetchProducts = async () => {
-            try {
-                const response = await fetch(`https://api.example.com/products/${PRODUCT_ID}`, {
-                    headers: {
-                        'Authorization': `Bearer ${API_KEY}`
-                    }
-                });
-                const data = await response.json();
-                setProducts(data);
-            } catch (error) {
-                console.error('Error fetching products:', error);
-            }
-        };
-
-        fetchProducts();
+        fetch('https://timbu-get-all-products.reavdev.workers.dev?organization_id=8ae37985db5c4bd88cfbd53f52972263&reverse_sort=false&page=1&size=10&Appid=YO1NW8GUL4ENHX6&Apikey=ee17b5f35b76441a9736019dc474f62a20240712195531195532')
+            .then(res => res.json())
+            .then(data => setProducts(data.items)) 
+            .catch(err => console.error('Error fetching products:', err)); 
     }, []);
 
     return (
@@ -45,11 +23,15 @@ const Sec3home = () => {
                 {products.map(product => (
                     <div key={product.id} className="w-full md:w-[30%] lg:w-[20%]">
                         <div className="w-full border-[2px] border-[#9DBEFF] rounded-[8px] flex justify-center items-center h-[300px]">
-                            <img src={product.img} className="w-auto h-[250px]" alt={product.name} />
+                        {product.photos && product.photos.length > 0 ? (
+                                <img src={product.photos[0]} className="w-auto h-[250px]" alt={product.name} />
+                            ) : (
+                                <p>No image available</p>
+                            )}
                         </div>
-                        <p className='text-[9px] mt-[10px]'>{product.name}</p>
+                        <p className='text-[12px] mt-[10px]'>{product.name}</p>
                         <div className="flex justify-between items-center">
-                            <p className="font-semibold">₦{product.price.toLocaleString()}</p>
+                            <p className="font-semibold">₦{product.current_price.NGN}</p>
                             <IoIosHeartEmpty className="w-[20px] h-[20px] md:w-auto md:h-auto"/>
                         </div>
                         <p 
