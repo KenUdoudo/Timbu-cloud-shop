@@ -52,7 +52,7 @@ const Sec3home = () => {
                         </div>
                         <p className='text-[12px] mt-[10px]'>{product.name}</p>
                         <div className="flex justify-between items-center">
-                            <p className="font-semibold">₦{product.current_price.NGN}</p>
+                            <p className="font-semibold">₦{product.current_price.NGN[0]}</p>
                             <IoIosHeartEmpty className="w-[20px] h-[20px] md:w-auto md:h-auto" />
                         </div>
                         <p
