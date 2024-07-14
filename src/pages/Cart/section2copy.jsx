@@ -36,6 +36,34 @@ const Sec2cart = () => {
             </div>
           ))}
         </div>
+        <div className="md:hidden w-full">
+          {cart.map((item) => (
+            <div key={item.id}>
+                <div className="w-full flex justify-between items-center">
+                  <div className="flex items-center gap-[5px]">
+                    <HiOutlineTrash className="text-[#DD2C00]" onClick={() => removeItemFromCart(item.id)} />
+                    <img src={`https://api.timbu.cloud/images/${item.photos[0].url}`} className="w-[100px]" />
+                  </div>
+                  <div className="w-[60%]">
+                    <p className="text-[10px]">{item.name}</p>
+                    <div className="w-full flex justify-between items-center mt-[5px]">
+                    <p className="font-semibold w-[20%]">₦{item.current_price[0].NGN[0]}</p>
+                      <div className="flex items-center gap-[5px]">
+                        <FaMinusSquare className="text-[#818181]" onClick={() => updateItemQuantity(item.id, item.quantity - 1)} />
+                        <p className="text-[10px]">{item.quantity}</p>
+                        <FaPlusSquare className="text-[#2972FF]" onClick={() => updateItemQuantity(item.id, item.quantity + 1)} />
+                      </div>
+                    </div>
+                    <div className="w-full flex justify-start gap-[20px] mt-[20px]">
+                      <p className="font-semibold text-[10px]">Total:</p>
+                      <p className="font-semibold text-[10px] w-[20%]">₦{item.current_price[0].NGN[0] * item.quantity}</p>
+                    </div>
+                  </div>
+                </div>
+                <hr className="" />
+            </div>
+          ))}
+        </div>
       </div>
       <div className="w-full lg:w-[25%] border-[1px] border-[#9DBEFF] rounded-[8px] p-[10px]">
         <p className="font-semibold">Order Summary</p>
