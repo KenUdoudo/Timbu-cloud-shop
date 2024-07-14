@@ -3,18 +3,6 @@ import { useCart } from '../Cartcontext';
 import { HiOutlineTrash } from "react-icons/hi2";
 import { FaPlusSquare, FaMinusSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import ac from './assets/ac.png';
-import tv from './assets/tv.png';
-import blender from './assets/blender.png';
-import fridge from './assets/fridge.png';
-import icemaker from './assets/something.png';
-import airfryer from './assets/airfyer.png';
-import washing from './assets/washingmachine.png';
-import four from './assets/4k.png';
-import power from './assets/power.png';
-import gen from './assets/gen.png';
-import toaster from './assets/toaster.png';
-import solar from './assets/solar.png';
 const Sec2cart = () => {
   const { cart, removeItemFromCart, updateItemQuantity } = useCart();
 
@@ -31,19 +19,19 @@ const Sec2cart = () => {
           {cart.map((item) => (
             <div key={item.id}>
               <hr className="mt-[20px]" />
-              <div className="w-full flex justify-between items-center">
-                <div className="flex items-center gap-[5px] w-[80%]">
+              <div className="w-full flex justify-between items-center mt-[10px]">
+                <div className="flex items-center gap-[5px] md:gap-[10px] w-[70%]">
                   <HiOutlineTrash className="text-[#DD2C00]" onClick={() => removeItemFromCart(item.id)} />
-                  <img src={item.image} className="w-[100px]" />
+                  <img src={`https://api.timbu.cloud/images/${item.photos[0].url}`} className="w-[100px]" />
                   <p className="text-[10px]">{item.name}</p>
                 </div>
-                <p className="font-semibold w-[20%]">₦{item.price}</p>
+                <p className="font-semibold w-[20%]">₦{item.current_price[0].NGN[0]}</p>
                 <div className="flex items-center gap-[5px] w-[20%]">
                   <FaMinusSquare className="text-[#818181]" onClick={() => updateItemQuantity(item.id, item.quantity - 1)} />
                   <p className="text-[12px]">{item.quantity}</p>
                   <FaPlusSquare className="text-[#2972FF]" onClick={() => updateItemQuantity(item.id, item.quantity + 1)} />
                 </div>
-                <p className="font-semibold w-[20%]">₦{item.price * item.quantity}</p>
+                <p className="font-semibold w-[20%]">₦{item.current_price[0].NGN[0] * item.quantity}</p>
               </div>
             </div>
           ))}
@@ -53,7 +41,7 @@ const Sec2cart = () => {
         <p className="font-semibold">Order Summary</p>
         <div className="w-full flex justify-between mt-[20px]">
           <p className="text-[#818181] text-[13px]">Sub-Total</p>
-          <p className="text-[#2972FF] text-[13px]">₦{cart.reduce((total, item) => total + item.price * item.quantity, 0)}</p>
+          <p className="text-[#2972FF] text-[13px]">₦{cart.reduce((total, item) => total + item.current_price[0].NGN[0] * item.quantity, 0)}</p>
         </div>
         <div className="w-full flex justify-between mt-[8px]">
           <p className="text-[#818181] text-[13px]">Shipping Fee</p>
@@ -66,7 +54,7 @@ const Sec2cart = () => {
         </div>
         <div className="w-full flex justify-between mt-[8px]">
           <p className="text-[14px]">Total Price</p>
-          <p className="text-[#2972FF] text-[13px]">₦{cart.reduce((total, item) => total + item.price * item.quantity, 0) + 83300}</p>
+          <p className="text-[#2972FF] text-[13px]">₦{cart.reduce((total, item) => total + item.current_price[0].NGN[0] * item.quantity, 0) + 83300}</p>
         </div>
         <Link to='/checkout'><p className="bg-[#2972FF] hover:bg-[#6893eb] text-white w-full py-[7px] rounded-[8px] cursor-pointer mt-[20px] text-center">Checkout</p></Link>
       </div>
