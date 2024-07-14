@@ -60,7 +60,7 @@ const Sec2cart = () => {
                     </div>
                   </div>
                 </div>
-                <hr className="" />
+                <hr className="my-[10px]" />
             </div>
           ))}
         </div>
