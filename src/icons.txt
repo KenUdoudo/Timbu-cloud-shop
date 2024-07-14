@@ -1,0 +1,17 @@
+import { RiArrowDropDownLine } from "react-icons/ri";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { IoMdHeart } from "react-icons/io";
+import { TbShoppingBag } from "react-icons/tb";
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+
+import { Bs1CircleFill } from "react-icons/bs";
+import { Bs2CircleFill } from "react-icons/bs";
+import { FaPlusSquare } from "react-icons/fa";
+import { FaMinusSquare } from "react-icons/fa";
+import { HiOutlineTrash } from "react-icons/hi2";
+import { PiCheckFat } from "react-icons/pi";
+
+© Copyright 2024, All Rights Reserved by Timbu Cloud Shop
