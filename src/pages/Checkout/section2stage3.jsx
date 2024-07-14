@@ -3,6 +3,12 @@ import { useCart } from '../Cartcontext';
 
 const Sec2check = () => {
     const { cart } = useCart();
+
+    const calculateSubtotal = () => {
+        return cart.reduce((acc, item) => acc + item.current_price[0].NGN[0] * item.quantity, 0);
+    };
+
+    const subtotal = calculateSubtotal();
     return (
         <div className='px-[20px] md:px-[40px] w-full mt-[20px] md:mt-[70px] flex flex-col lg:flex-row items-start'>
             <div className='w-full lg:w-[50%]'>
@@ -67,7 +73,8 @@ const Sec2check = () => {
             <div className="w-full lg:w-[50%] border-[1px] border-[#9DBEFF] rounded-[8px] p-[10px] lg:p-[20px]">
                 <p className="font-semibold">Order Summary</p>
                 {cart.map(item => (
-                    <div key={item.id} className='w-full flex gap-[5px] justify-between items-center'>
+                    <div key={item.id} className='w-full'>
+                        <div className='w-full flex gap-[5px] justify-between items-center'>
                         <img src={`https://api.timbu.cloud/images/${item.photos[0].url}`} className="w-[100px]" alt={item.name} />
                         <div className='flex justify-between items-center gap-[10px] w-[70%]'>
                             <div className='flex flex-col gap-[10px]'>
@@ -76,9 +83,11 @@ const Sec2check = () => {
                             </div>
                             <p className='text-[14px] md:text-[16px] '>x{item.quantity}</p>
                         </div>
+                        </div>
+                        <hr className='my-[10px]'/>
                     </div>
                 ))}
-                <hr className='my-[10px]'/>
+                
 
                 <div className="w-full flex justify-between mt-[20px]">
                     <p className="text-[#818181] text-[13px]">Sub-Total</p>
