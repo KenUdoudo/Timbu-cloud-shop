@@ -41,7 +41,7 @@ export const CartProvider = ({ children }) => {
 };
 export { CartContext};*/
 
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import { createContext, useState, useContext, useEffect } from 'react';
 import allProducts from '../data/products';
 
 const CartContext = createContext();

@@ -115,7 +115,7 @@ const Sec2check = () => {
  
 export default Sec2check;*/
 
-import React from 'react';
+
 import { useCart } from '../Cartcontext';
 
 const Sec2check = () => {

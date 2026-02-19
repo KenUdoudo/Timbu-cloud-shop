@@ -87,7 +87,7 @@ const Sec3home = () => {
 
 export default Sec3home;*/
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoIosHeartEmpty } from "react-icons/io";
 import { TbShoppingBag } from "react-icons/tb";
 import { useCart } from '../Cartcontext';
