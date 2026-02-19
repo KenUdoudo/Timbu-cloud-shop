@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+/*import React, { useEffect, useState } from 'react';
 import { IoIosHeartEmpty } from "react-icons/io";
 import { TbShoppingBag } from "react-icons/tb";
 import { useCart } from '../Cartcontext';
@@ -85,5 +85,103 @@ const Sec3home = () => {
     );
 };
 
+export default Sec3home;*/
+
+import React, { useEffect, useState } from 'react';
+import { IoIosHeartEmpty } from "react-icons/io";
+import { TbShoppingBag } from "react-icons/tb";
+import { useCart } from '../Cartcontext';
+import allProducts from "../../data/products"; 
+
+const Sec3home = () => {
+    const { addItemToCart } = useCart();
+
+    const [products, setProducts] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 4; 
+
+    useEffect(() => {
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        setProducts(allProducts.slice(startIndex, endIndex));
+    }, [currentPage]);
+
+    const totalPages = Math.ceil(allProducts.length / itemsPerPage);
+
+    const handleNextPage = () => {
+        if (currentPage < totalPages) {
+            setCurrentPage(prevPage => prevPage + 1);
+        }
+    };
+
+    const handlePreviousPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(prevPage => prevPage - 1);
+        }
+    };
+
+    return (
+        <div className="px-[20px] md:px-[40px] py-[20px]">
+            <p className="text-[20px] md:text-[38px] font-semibold">Featured Products</p>
+
+            <div className="w-full flex flex-row justify-center flex-wrap gap-[20px] mt-[20px] md:mt-[40px]">
+                {products.map(product => (
+                    <div key={product.id} className="w-full md:w-[30%] lg:w-[20%]">
+                        <div className="w-full border-[2px] border-[#9DBEFF] rounded-[8px] flex justify-center items-center h-[300px]">
+                            {product.photos && product.photos.length > 0 ? (
+                                <img 
+                                    src={product.photos[0].url}   
+                                    className="w-auto h-[250px]" 
+                                    alt={product.name} 
+                                />
+                            ) : (
+                                <p>No image available</p>
+                            )}
+                        </div>
+
+                        <p className='text-[12px] mt-[10px]'>{product.name}</p>
+
+                        <div className="flex justify-between items-center">
+                            <p className="font-semibold">
+                                ₦{product.current_price[0].NGN[0]}
+                            </p>
+                            <IoIosHeartEmpty className="w-[20px] h-[20px]" />
+                        </div>
+
+                        <p
+                            className="bg-[#2972FF] hover:bg-[#6893eb] text-white px-[20px] py-[5px] rounded-[8px] flex justify-center items-center gap-[10px] cursor-pointer mt-[15px] text-[16px]"
+                            onClick={() => addItemToCart(product)}
+                        >
+                            <TbShoppingBag className="w-[20px] h-[20px]" /> 
+                            Add to Cart
+                        </p>
+                    </div>
+                ))}
+            </div>
+
+            <div className="flex justify-center items-center mt-[20px]">
+                <button 
+                    className="px-[10px] py-[5px] bg-gray-300 rounded mr-[10px] disabled:bg-gray-200"
+                    onClick={handlePreviousPage}
+                    disabled={currentPage === 1}
+                >
+                    Previous
+                </button>
+
+                <span>{currentPage} / {totalPages}</span>
+
+                <button 
+                    className="px-[10px] py-[5px] bg-gray-300 rounded ml-[10px] disabled:bg-gray-200"
+                    onClick={handleNextPage}
+                    disabled={currentPage === totalPages}
+                >
+                    Next
+                </button>
+            </div>
+        </div>
+    );
+};
+
 export default Sec3home;
+
 
